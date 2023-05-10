@@ -1,0 +1,146 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    background-color: blue;
+}
+
+.container {
+    position: absolute;
+    width: 90%;
+    max-width: 31.25em;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    padding: 5em 3em;
+    transform: translate(-50%, -50%);
+}
+
+.container h3 {
+    color: #23234c;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.8em;
+}
+
+.container #submit-button {
+    display: block;
+    color: white;
+    background-color: blue;
+    border-radius: 0.3em;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    padding: 0.6em 2em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.container #submit-button:hover {
+    color: #e5e5ff;
+    background-color: #3c3cbb;
+}
+
+.container #error-message {
+    color: #d62f2f;
+    text-align: center;
+    background-color: #ffdde0;
+    margin-top: 1em;
+    padding: 0.2em 0;
+}
+
+.container #question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #23234c;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    background-color: #eeedf1;
+    padding: 1em 0;
+    margin: 1.4em 0 1em 0;
+}
+
+.container input {
+    width: 2.35em;
+    color: #23234c;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: transparent;
+    border-bottom: 0.12em solid #23234c;
+    border: none;
+    margin: 0 0.25em;
+    padding: 0 0.2em;
+}
+
+.container input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.container input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.container input[type="number"]::-webkit-outer-spin-button,
+.container input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.controls {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: blue;
+    flex-direction: column;
+}
+
+.controls #result {
+    color: #000000;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.controls #result span {
+    font-weight: 600;
+}
+
+.controls #start-button {
+    color: #23234c;
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: #ffffff;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    padding: 0.8em 1.8em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.controls #start-button:hover {
+    color: white;
+    background-color: #23234c;
+}
+
+.hide {
+    display: none;
+}
